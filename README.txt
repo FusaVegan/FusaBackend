@@ -1,1 +1,1 @@
-Developed by Nicolas Galdos
+Developed by Nicolas Galdos & Blas Casale
