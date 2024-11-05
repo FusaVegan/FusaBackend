@@ -8,6 +8,11 @@ const reviewRouter = require("./review.routes");
 const typeRouter = require("./type.routes");
 const imageRouter = require("./image.routes");
 const mailerRouter = require("./mailer.routes");
+const newRouter = require(`./new.routes`);
+const storageRouter = require(`./storage.routes`);
+const clientRouter = require("./client.routes");
+const stockRouter = require("./stock.routes");
+const clientOrderRouter = require("./clientOrder.routes");
 
 router.use("/user", userRouter);
 router.use("/product", productRouter);
@@ -17,5 +22,10 @@ router.use("/review", reviewRouter);
 router.use("/type", typeRouter);
 router.use("/image", imageRouter);
 router.use("/mailer", mailerRouter);
+router.use(`/new`, newRouter);
+router.use(`/storage`, storageRouter);
+router.use(`/client`, clientRouter);
+router.use(`/stock`, stockRouter);
+router.use(`/clientOrder`, clientOrderRouter);
 
 module.exports = router;
