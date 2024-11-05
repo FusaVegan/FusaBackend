@@ -24,6 +24,10 @@ const OrderFunc = (sequelize) => {
             type: DataTypes.UUID,
             allowNull: false,
           },
+          unitPrice:{
+            type: DataTypes.DECIMAL,
+            allowNull: false,
+          },
           count: {
             type: DataTypes.INTEGER,
             allowNull: false,
